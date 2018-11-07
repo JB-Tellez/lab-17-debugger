@@ -9,6 +9,9 @@ import supertest from 'supertest';
 
 let mongoServer;
 
+// May require additional time for downloading MongoDB binaries
+global.jasmine.DEFAULT_TIMEOUT_INTERVAL = 60000;
+
 /** 
  * @server 
  * @returns function that expects an express server

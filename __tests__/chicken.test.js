@@ -5,7 +5,6 @@ import Coop from '../src/coop/model.js';
 beforeAll(startDB);
 afterAll(stopDB);
 beforeEach(async () => {
-  jest.setTimeout(30 * 1000);
   await Chicken.deleteMany({});
   await Coop.deleteMany({});
 });
